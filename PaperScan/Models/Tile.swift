@@ -10,11 +10,14 @@ import Foundation
 struct Tile: Identifiable, Equatable {
     let id: Int
     
-    let name = UUID().uuidString
-    
     var children = [Tile]()
     
     mutating func addChildren(children: [Tile]) {
-        self.children.append(contentsOf: children)
+        for child in children {
+            self.children.append(child)
+            if child.children.count > 0 {
+                self.children.append(contentsOf: child.children)
+            }
+        }
     }
 }

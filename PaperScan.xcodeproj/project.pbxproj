@@ -11,12 +11,15 @@
 		5E9D6F152A75277B001F12E3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E9D6F142A75277B001F12E3 /* ContentView.swift */; };
 		5E9D6F172A75277E001F12E3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5E9D6F162A75277E001F12E3 /* Assets.xcassets */; };
 		5E9D6F1A2A75277E001F12E3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5E9D6F192A75277E001F12E3 /* Preview Assets.xcassets */; };
-		5E9D6F252A75277E001F12E3 /* PaperScanTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E9D6F242A75277E001F12E3 /* PaperScanTests.swift */; };
+		5E9D6F252A75277E001F12E3 /* ContentViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E9D6F242A75277E001F12E3 /* ContentViewModelTests.swift */; };
 		5E9D6F2F2A75277E001F12E3 /* PaperScanUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E9D6F2E2A75277E001F12E3 /* PaperScanUITests.swift */; };
 		5E9D6F312A75277E001F12E3 /* PaperScanUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E9D6F302A75277E001F12E3 /* PaperScanUITestsLaunchTests.swift */; };
 		5E9D6F3F2A7527D4001F12E3 /* Tile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E9D6F3E2A7527D4001F12E3 /* Tile.swift */; };
 		5EBD25C52A76CDE800306584 /* DocumentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EBD25C42A76CDE800306584 /* DocumentView.swift */; };
 		5EBD25C72A76E1CF00306584 /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EBD25C62A76E1CF00306584 /* ContentViewModel.swift */; };
+		5EBD25C82A76EB6800306584 /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EBD25C62A76E1CF00306584 /* ContentViewModel.swift */; };
+		5EBD25C92A76EB9100306584 /* Tile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E9D6F3E2A7527D4001F12E3 /* Tile.swift */; };
+		5EBD25CB2A76EBAC00306584 /* TileModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EBD25CA2A76EBAC00306584 /* TileModelTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,7 +47,7 @@
 		5E9D6F192A75277E001F12E3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		5E9D6F1B2A75277E001F12E3 /* PaperScan.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PaperScan.entitlements; sourceTree = "<group>"; };
 		5E9D6F202A75277E001F12E3 /* PaperScanTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PaperScanTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		5E9D6F242A75277E001F12E3 /* PaperScanTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaperScanTests.swift; sourceTree = "<group>"; };
+		5E9D6F242A75277E001F12E3 /* ContentViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModelTests.swift; sourceTree = "<group>"; };
 		5E9D6F2A2A75277E001F12E3 /* PaperScanUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PaperScanUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E9D6F2E2A75277E001F12E3 /* PaperScanUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaperScanUITests.swift; sourceTree = "<group>"; };
 		5E9D6F302A75277E001F12E3 /* PaperScanUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaperScanUITestsLaunchTests.swift; sourceTree = "<group>"; };
@@ -52,6 +55,7 @@
 		5EBD25C22A76CDA900306584 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		5EBD25C42A76CDE800306584 /* DocumentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentView.swift; sourceTree = "<group>"; };
 		5EBD25C62A76E1CF00306584 /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
+		5EBD25CA2A76EBAC00306584 /* TileModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TileModelTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,7 +130,8 @@
 		5E9D6F232A75277E001F12E3 /* PaperScanTests */ = {
 			isa = PBXGroup;
 			children = (
-				5E9D6F242A75277E001F12E3 /* PaperScanTests.swift */,
+				5E9D6F242A75277E001F12E3 /* ContentViewModelTests.swift */,
+				5EBD25CA2A76EBAC00306584 /* TileModelTests.swift */,
 			);
 			path = PaperScanTests;
 			sourceTree = "<group>";
@@ -298,7 +303,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5E9D6F252A75277E001F12E3 /* PaperScanTests.swift in Sources */,
+				5EBD25C92A76EB9100306584 /* Tile.swift in Sources */,
+				5EBD25CB2A76EBAC00306584 /* TileModelTests.swift in Sources */,
+				5EBD25C82A76EB6800306584 /* ContentViewModel.swift in Sources */,
+				5E9D6F252A75277E001F12E3 /* ContentViewModelTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -516,8 +524,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = none.PaperScanTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PaperScan.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/PaperScan";
 			};
 			name = Debug;
@@ -534,8 +546,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = none.PaperScanTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PaperScan.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/PaperScan";
 			};
 			name = Release;

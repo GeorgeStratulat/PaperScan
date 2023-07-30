@@ -8,13 +8,15 @@
 import SwiftUI
 
 struct DocumentView: View {
+    @Namespace var namespace
+    
     let tile: Tile
     let selected: Bool
     
     var body: some View {
         ZStack(alignment: .topLeading) {
-            ForEach(tile.children, id: \.id) { tile in
-                DocumentView(tile: tile, selected: false)
+            ForEach(tile.children, id: \.id) { child in
+                DocumentView(tile: child, selected: false)
                     .rotationEffect(.degrees(-5))
             }
             ZStack {
@@ -43,6 +45,7 @@ struct DocumentView: View {
         }
         .overlay(RoundedRectangle(cornerRadius: 5)
         .stroke(.blue, lineWidth: selected ? 5: 0))
+        .matchedGeometryEffect(id: tile.id, in: namespace)
     }
 }
 

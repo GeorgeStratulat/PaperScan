@@ -8,9 +8,9 @@
 import Foundation
 
 final class ContentViewModel: ObservableObject {
-    @Published var lastIndex = 10
+    private var lastIndex = 10
     
-    @Published  var tiles = {
+    @Published var tiles = {
         var tiles = [Tile]()
         for i in 1...10 {
             tiles.append(Tile(id: i))
@@ -21,7 +21,7 @@ final class ContentViewModel: ObservableObject {
     @Published var selectedTiles = [Tile]()
     
     // method used for filling the tiles; we need to always have 10 tiles
-    func addTiles(_ upTo: Int = 10) {
+    private func addTiles(_ upTo: Int = 10) {
         let toBeAdded = upTo - self.tiles.count
         
         for i in (lastIndex + 1)...(toBeAdded + lastIndex) {
@@ -38,7 +38,8 @@ final class ContentViewModel: ObservableObject {
         auxTiles.remove(at: 0)
         firstTile.addChildren(children: auxTiles) // we add all the selected tiles except for itself
         
-        var copy = self.tiles
+        var copy = tiles
+        
         copy = copy.map {
             var tile = $0
             // we merge into the first selected tile
